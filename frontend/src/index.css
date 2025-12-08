@@ -99,6 +99,58 @@ p {
   font-size: 0.9rem;
 }
 
+/* --- search dropdown --- */
+.nav-search {
+  flex: 1;
+  max-width: 520px;
+  position: relative; /* important for absolute dropdown */
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 14px 45px rgba(15, 23, 42, 0.18);
+  padding: 0.5rem 0;
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 20;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+}
+
+.search-item:hover {
+  background-color: #f3f4f6;
+}
+
+.search-item-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  background-color: #e5e7eb;
+}
+
+.search-item-name {
+  font-size: 0.9rem;
+}s
+
+.search-item-price {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-left: auto;
+}
+
 /* ===== Hero ===== */
 
 .hero {
