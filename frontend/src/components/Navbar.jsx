@@ -114,6 +114,9 @@ function Navbar({ searchTerm, onSearchChange }) {
         </div>
 
         <div className="nav-right">
+          <Link to="/admin/products/new" className="icon-btn" style={{ marginLeft: 8 }}>
+          Admin
+        </Link>
           <Link to="/account" className="icon-btn">
             Account
           </Link>
